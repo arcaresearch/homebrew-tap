@@ -5,21 +5,21 @@
 class Arca < Formula
   desc "CLI for the Arca platform"
   homepage "https://arcaos.io"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.4/arca_0.0.4_darwin_amd64.tar.gz"
-      sha256 "785f1ef6ad8b922d10a23ccc13be60f757fde0600f769a4a7bb5849501850b3d"
+      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.5/arca_0.0.5_darwin_amd64.tar.gz"
+      sha256 "e4dc9b9225122262a54ab7fcac7394aeb3d09e5c2769139d6bfbf39bfb70e269"
 
       define_method(:install) do
         bin.install "arca"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.4/arca_0.0.4_darwin_arm64.tar.gz"
-      sha256 "d6d7855d99b64124b499c888fa898d1cdc1833b9fab4aebc78dffbfc7f190a0f"
+      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.5/arca_0.0.5_darwin_arm64.tar.gz"
+      sha256 "f01f2f3b60047554cf879339f89b7eb25f47075cc0d43e264cd72d080e8a5793"
 
       define_method(:install) do
         bin.install "arca"
@@ -29,15 +29,15 @@ class Arca < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.4/arca_0.0.4_linux_amd64.tar.gz"
-      sha256 "fbb30210283f83e62c6497345c0874cead60aef117d97b9f14d77da1ffbdf831"
+      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.5/arca_0.0.5_linux_amd64.tar.gz"
+      sha256 "153ac03127e90176f243f7c3011f4aa2a8a141a4ce385df5e6299d9b6f01c24f"
       define_method(:install) do
         bin.install "arca"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.4/arca_0.0.4_linux_arm64.tar.gz"
-      sha256 "cff60d165bf49bc3f5e6ef899fe7122e3979a198fa15e7949f27ce515d8cbf6b"
+      url "https://github.com/arcaresearch/arca-cli/releases/download/v0.0.5/arca_0.0.5_linux_arm64.tar.gz"
+      sha256 "168e553cc9f72ce637a9cd52ceaf698cf536ae987cc79b15aae511cc816d2fbf"
       define_method(:install) do
         bin.install "arca"
       end
